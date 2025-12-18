@@ -1,0 +1,11 @@
+services:
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+  consul:
+    image: hashicorp/consul:latest
+    container_name: Consul
+    ports:
+     - '8500:8500'

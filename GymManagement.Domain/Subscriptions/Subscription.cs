@@ -1,30 +1,42 @@
 ﻿
 using ErrorOr;
-using GymManagement.Domain.Gyms;
+using GymManagement.Domain.ValueObjects;
 using Throw;
 
 namespace GymManagement.Domain.Subscriptions;
-public class Subscription
+public  class Subscription:SubscriptionId
 {
-    public Guid Id { get; private set; }
-    public  SubscriptionType subscriptionType { get; private set; } = null!;
+    public SubscriptionFirstName FirstName { get; private set; }
+    public SubscriptionLastName LastName { get; private set; }
+    public SubscriptionType subscriptionType { get; private set; } = null!;
 
     public Guid AdminId { get; }
     public List<Guid> GymIds { get; private set; } = new();
+    private Subscription()
+        : base(default!) { }
     public Subscription(
+          Guid SubscriptionId,
         SubscriptionType SubscriptionType,
         Guid adminId,
-        Guid? id = null)
+         SubscriptionFirstName firstname,
+        SubscriptionLastName lastname
+      
+        ):base(SubscriptionId)
     {
+        FirstName= firstname;
+        LastName= lastname;
         subscriptionType = SubscriptionType;
         AdminId = adminId;
-        Id = id ?? Guid.NewGuid();
-    
 
     }
-    public ErrorOr<Success> AddGym(Gym gym)
+    public static ErrorOr<Subscription> Create(Guid SubscriptionId, string firstname,
+        string lastname, SubscriptionType subscriptionType,Guid adminId)
     {
-        if (GymIds.Contains(gym.Id))
+        return new Subscription(SubscriptionId, subscriptionType, adminId, SubscriptionFirstName.Create(firstname).Value, SubscriptionLastName.Create(lastname).Value);
+    }
+    public ErrorOr<Success> AddGym(ErrorOr<Gym> gym)
+    {
+        if (GymIds.Contains(gym.Value.Id))
         {
             return Error.Validation("GymAlreadyExists", "This gym is already added.");
         }
@@ -34,7 +46,7 @@ public class Subscription
             return SubscriptionErrors.CannotHaveMoreGymsThanTheSubscriptionAllows;
         }
 
-        GymIds.Add(gym.Id);
+        GymIds.Add(gym.Value.Id);
         return Result.Success;
     }
     public int GetMaxRooms() => subscriptionType.Name switch
@@ -65,9 +77,6 @@ public class Subscription
         GymIds.Remove(gymid);
     }
 
-    private Subscription()
-    {
-    }
 }
  
 

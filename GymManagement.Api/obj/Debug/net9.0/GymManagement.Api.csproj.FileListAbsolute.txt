@@ -146,3 +146,6 @@ C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\obj\Debug\net9.0\rjimswa.ds
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\obj\Debug\net9.0\GymManagement.Api.sourcelink.json
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\obj\Debug\net9.0\swae.build.ex.cache
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Api\bin\Debug\net9.0\FluentValidation.dll

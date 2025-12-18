@@ -32,16 +32,16 @@ public class CreateSubscriptionsCommandHandler : IRequestHandler<CreateSubscript
             return Error.Validation(description: "Invalid subscription type");
         }
 
-        var subscription = new Subscription(subscriptionType, request.AdminId);
+        var subscription = Subscription.Create(request.firstname,request.lastname ,subscriptionType, request.AdminId);
 
         if (admin.SubscriptionId is not null)
         {
             return Error.Conflict(description: "Admin already has an active subscription");
         }
 
-        admin.SetSubscription(subscription);
+        admin.SetSubscription(subscription.Value);
 
-        await _subscriptionsRepository.AddSubscriptionAsync(subscription, cancellationToken);
+        await _subscriptionsRepository.AddSubscriptionAsync(subscription.Value, cancellationToken);
         await _adminsRepository.UpdateAsync(admin);
         await _unitOfWork.CommitChangesAsync();
 

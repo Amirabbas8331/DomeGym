@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JOf476CN+DQ=",
+  "dgSpecHash": "ng7QhSP5fjg=",
   "success": true,
   "projectFilePath": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\GymManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msigaming\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512",
     "C:\\Users\\msigaming\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\msigaming\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\msigaming\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
     "C:\\Users\\msigaming\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\msigaming\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.6\\microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",

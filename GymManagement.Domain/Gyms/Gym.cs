@@ -22,15 +22,18 @@ public class Gym
         SubscriptionId = subscriptionId;
         MaxRooms = maxRooms;
     }
-
-    public ErrorOr<Success> AddRoom(Room room)
+    public static ErrorOr<Gym> Create(string name,Guid subscriptionid, int maxrooms)
     {
-        RoomIds.Throw().IfContains(room.Id);
+        return new Gym(name, subscriptionid, maxrooms);
+    }
+    public ErrorOr<Success> AddRoom(ErrorOr<Room> room)
+    {
+        RoomIds.Throw().IfContains(room.Value.Id);
 
         if (RoomIds.Count >= MaxRooms)
             return GymErrors.CannotHaveMoreRoomsThanSubscriptionAllows;
 
-        RoomIds.Add(room.Id);
+        RoomIds.Add(room.Value.Id);
         return Result.Success;
     }
     public ErrorOr<Success> RemoveRoom(Guid roomId)

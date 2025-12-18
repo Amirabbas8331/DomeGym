@@ -1,11 +1,12 @@
 ﻿
+using ErrorOr;
 using GymManagement.Domain.Gyms;
 using GymManagement.Domain.Subscriptions;
 
 namespace GymManagement.Application.Common.Interfaces;
 public interface IGymRepository
 {
-    Task AddGymAsync(Gym gym, CancellationToken cancellationToken);
+    Task AddGymAsync(ErrorOr<Gym> gym, CancellationToken cancellationToken);
     Task<bool> ExistsAsync(Guid id);
     Task<Gym?> GetByIdAsync(Guid id);
     Task<List<Gym>> ListBySubscriptionIdAsync(Guid subscriptionId);

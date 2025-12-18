@@ -21,7 +21,7 @@ namespace GymManagement.Api.Controllers
         public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
         {
 
-            var command = new CreateSubscriptionsCommand(request.AdminId,request.SubscriptionType.ToString());
+            var command = new CreateSubscriptionsCommand(request.firstname,request.lastname,request.AdminId,request.SubscriptionType.ToString());
 
             var createSubscriptionResult = await _mediator.Send(command);
 

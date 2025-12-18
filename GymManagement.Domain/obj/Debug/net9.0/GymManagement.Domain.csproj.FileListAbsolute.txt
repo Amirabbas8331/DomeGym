@@ -10,3 +10,4 @@ C:\Users\msigaming\Desktop\DomeGym\GymManagement.Domain\obj\Debug\net9.0\refint\
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Domain\obj\Debug\net9.0\GymManagement.Domain.pdb
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Domain\obj\Debug\net9.0\ref\GymManagement.Domain.dll
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Domain\obj\Debug\net9.0\GymManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Domain\obj\Debug\net9.0\GymManagement.Domain.sourcelink.json

@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Api", "GymMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Infrastructure", "GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{6C2B4EFD-D8C4-482E-A736-8DAE1E90DC5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{9B2371D9-C597-44A6-903B-CE65D38E1A74}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6C2B4EFD-D8C4-482E-A736-8DAE1E90DC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C2B4EFD-D8C4-482E-A736-8DAE1E90DC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C2B4EFD-D8C4-482E-A736-8DAE1E90DC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2371D9-C597-44A6-903B-CE65D38E1A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2371D9-C597-44A6-903B-CE65D38E1A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2371D9-C597-44A6-903B-CE65D38E1A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2371D9-C597-44A6-903B-CE65D38E1A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

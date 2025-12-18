@@ -30,7 +30,7 @@ public class CreateRoomCommandHandler : IRequestHandler<CreateRoomCommand, Error
         {
             return Error.NotFound(description: "Subscription not found");
         }
-        var room = new Room(
+        var room =  Room.Create(
             request.RoomName,
             request.GymId,
             subscription.GetMaxDailySessions());

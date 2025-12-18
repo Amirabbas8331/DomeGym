@@ -22,11 +22,11 @@ public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr
         {
             return Error.NotFound(description: "Subscription not found");
         }
-        var gym = new 
-            Gym(
+        var gym = 
+            Gym.Create(
             name: request.Name,
-            subscriptionId: subscription.Id, 
-            maxRooms:subscription.GetMaxRooms());
+            subscriptionid: subscription.Id, 
+            maxrooms:subscription.GetMaxRooms());
 
         var addgymresult = subscription.AddGym(gym);
         

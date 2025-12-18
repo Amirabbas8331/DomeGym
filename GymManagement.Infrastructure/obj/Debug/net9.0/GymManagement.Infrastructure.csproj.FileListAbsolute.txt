@@ -17,3 +17,4 @@ C:\Users\msigaming\Desktop\DomeGym\GymManagement.Infrastructure\obj\Debug\net9.0
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Infrastructure\obj\Debug\net9.0\ref\GymManagement.Infrastructure.dll
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Infrastructure\bin\Debug\net9.0\GymManagement.Infrastructure.runtimeconfig.json
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Infrastructure\obj\Debug\net9.0\GymManagement.Infrastructure.genruntimeconfig.cache
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Infrastructure\obj\Debug\net9.0\GymManagement.Infrastructure.sourcelink.json

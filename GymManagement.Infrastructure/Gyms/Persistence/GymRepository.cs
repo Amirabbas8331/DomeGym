@@ -1,4 +1,5 @@
-﻿using GymManagement.Application.Common.Interfaces;
+﻿using ErrorOr;
+using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Gyms;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +14,9 @@ public class GymRepository : IGymRepository
         _context = context;
 
     }
-    public async Task AddGymAsync(Gym gym, CancellationToken cancellationToken)
+    public async Task AddGymAsync(ErrorOr<Gym> gym, CancellationToken cancellationToken)
     {
-        await _context.Gyms.AddAsync(gym, cancellationToken);
+        await _context.Gyms.AddAsync(gym.Value, cancellationToken);
     }
 
     public async Task<bool> ExistsAsync(Guid id)
