@@ -160,6 +160,14 @@
               "target": "Package",
               "version": "[2.0.1, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.5.0, )"
@@ -216,7 +224,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Domain\\GymManagement.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -307,10 +319,6 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[2.0.1, )"
-            },
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[12.1.1, )"
             },
             "Throw": {
               "target": "Package",

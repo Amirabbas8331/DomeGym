@@ -28,6 +28,7 @@ public class GymConfigurations : IEntityTypeConfiguration<Gym>
             .HasColumnName("TrainerIds")
             .HasListOfIdsConverter();
 
+
         
     }
 }

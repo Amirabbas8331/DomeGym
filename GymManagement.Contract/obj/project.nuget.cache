@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VIbyiVUoJzc=",
+  "dgSpecHash": "sP2JeImtplQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Contract\\GymManagement.Contract.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\msigaming\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512",
+    "C:\\Users\\msigaming\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\msigaming\\.nuget\\packages\\oneof\\3.0.216\\oneof.3.0.216.nupkg.sha512",
+    "C:\\Users\\msigaming\\.nuget\\packages\\throw\\1.4.0\\throw.1.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

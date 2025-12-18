@@ -1,9 +1,7 @@
 ﻿using ErrorOr;
-
-
 namespace GymManagement.Domain.ValueObjects;
 
-public class SubscriptionId : IdBase<Guid>
+public record SubscriptionId : IdBase<Guid>
 {
     public SubscriptionId(Guid Value) : base(Value)
     {

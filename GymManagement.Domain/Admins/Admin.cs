@@ -24,7 +24,7 @@ public class Admin
     {
         SubscriptionId.HasValue.Throw().IfTrue();
 
-        SubscriptionId = subscription.Id;
+        SubscriptionId = subscription.Id.Value;
         return Result.Success;
     }
 

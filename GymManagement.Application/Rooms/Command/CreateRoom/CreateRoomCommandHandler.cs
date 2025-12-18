@@ -34,7 +34,7 @@ public class CreateRoomCommandHandler : IRequestHandler<CreateRoomCommand, Error
             request.RoomName,
             request.GymId,
             subscription.GetMaxDailySessions());
-        var addGymResult = gym.AddRoom(room);
+        var addGymResult = gym.AddRoom(room.Value.Id);
 
         if (addGymResult.IsError)
         {

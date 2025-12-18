@@ -21,7 +21,7 @@ namespace GymManagement.Api.Controllers
         public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
         {
 
-            var command = new CreateSubscriptionsCommand(request.firstname,request.lastname,request.AdminId,request.SubscriptionType.ToString());
+            var command = new CreateSubscriptionsCommand(request.SubscriptionId,request.firstname,request.lastname,request.AdminId,request.SubscriptionType.ToString());
 
             var createSubscriptionResult = await _mediator.Send(command);
 
@@ -30,7 +30,7 @@ namespace GymManagement.Api.Controllers
                     nameof(GetSubscription),
                     new { subscriptionId = subscription.Id },
                     new SubscriptionResponse(
-                        subscription.Id,
+                        subscription.Id.Value,
                         ToDto(subscription.subscriptionType))),
                 Problem);
         }
@@ -44,7 +44,7 @@ namespace GymManagement.Api.Controllers
 
             return getSubscriptionsResult.Match(
                 subscription => Ok(new SubscriptionResponse(
-                    subscription.Id,
+                    subscription.Id.Value,
                     ToDto(subscription.subscriptionType))),
                 Problem);
         }

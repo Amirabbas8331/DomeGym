@@ -1,7 +1,6 @@
 ﻿using ErrorOr;
-using GymManagement.Domain.Gyms;
-using MediatR;
+using GymManagement.Application.Common.Interfaces;
 
 namespace GymManagement.Application.Gyms.Query.GetGym;
-public record GetGymQuery(Guid GymId,Guid subscriptionId):IRequest<ErrorOr<Gym>>;
+public record GetGymQuery(Guid GymId,Guid subscriptionId):ICommandBase<ErrorOr<Gym>>;
 

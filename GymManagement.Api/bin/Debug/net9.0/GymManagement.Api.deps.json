@@ -715,6 +715,9 @@
         }
       },
       "GymManagement.Contract/1.0.0": {
+        "dependencies": {
+          "GymManagement.Domain": "1.0.0"
+        },
         "runtime": {
           "GymManagement.Contract.dll": {
             "assemblyVersion": "1.0.0.0",

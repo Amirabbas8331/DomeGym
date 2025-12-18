@@ -1,10 +1,11 @@
 ﻿
 using ErrorOr;
+using GymManagement.Domain.Abstrctions;
 using GymManagement.Domain.ValueObjects;
 using Throw;
 
 namespace GymManagement.Domain.Subscriptions;
-public  class Subscription:SubscriptionId
+public  class Subscription:AggregateRoot<SubscriptionId>
 {
     public SubscriptionFirstName FirstName { get; private set; }
     public SubscriptionLastName LastName { get; private set; }
@@ -15,7 +16,7 @@ public  class Subscription:SubscriptionId
     private Subscription()
         : base(default!) { }
     public Subscription(
-          Guid SubscriptionId,
+          SubscriptionId SubscriptionId,
         SubscriptionType SubscriptionType,
         Guid adminId,
          SubscriptionFirstName firstname,
@@ -29,7 +30,7 @@ public  class Subscription:SubscriptionId
         AdminId = adminId;
 
     }
-    public static ErrorOr<Subscription> Create(Guid SubscriptionId, string firstname,
+    public static ErrorOr<Subscription> Create(SubscriptionId SubscriptionId, string firstname,
         string lastname, SubscriptionType subscriptionType,Guid adminId)
     {
         return new Subscription(SubscriptionId, subscriptionType, adminId, SubscriptionFirstName.Create(firstname).Value, SubscriptionLastName.Create(lastname).Value);

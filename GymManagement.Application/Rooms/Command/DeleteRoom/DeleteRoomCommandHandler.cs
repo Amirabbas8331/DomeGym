@@ -24,7 +24,7 @@ public class DeleteRoomCommandHandler : IRequestHandler<DeleteRoomCommand, Error
         {
             return Error.NotFound(description: "Gym not found");
         }
-        if (!gym.HasRoom(request.RoomId))
+        if (gym.HasRoom(request.RoomId).IsError)
             return Error.NotFound(description: "Room not found");
 
         gym.RemoveRoom(request.RoomId);

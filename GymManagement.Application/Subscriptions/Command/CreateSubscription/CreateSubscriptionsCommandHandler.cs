@@ -1,6 +1,7 @@
 ﻿using ErrorOr;
 using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Subscriptions;
+using GymManagement.Domain.Validations;
 using MediatR;
 
 namespace GymManagement.Application.Subscriptions.Command.CreateSubscription;
@@ -26,13 +27,12 @@ public class CreateSubscriptionsCommandHandler : IRequestHandler<CreateSubscript
         {
             return Error.NotFound(description: "Admin not found");
         }
-
         if (!SubscriptionType.TryFromName(request.SubscriptionType, out var subscriptionType))
         {
             return Error.Validation(description: "Invalid subscription type");
         }
 
-        var subscription = Subscription.Create(request.firstname,request.lastname ,subscriptionType, request.AdminId);
+        var subscription = Subscription.Create(request.SubscriptionId,request.firstname,request.lastname ,subscriptionType,adminId: request.AdminId);
 
         if (admin.SubscriptionId is not null)
         {

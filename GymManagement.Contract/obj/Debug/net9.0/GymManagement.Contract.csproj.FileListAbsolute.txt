@@ -10,3 +10,7 @@ C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\obj\Debug\net9.0\refin
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\obj\Debug\net9.0\GymManagement.Contract.pdb
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\obj\Debug\net9.0\ref\GymManagement.Contract.dll
 C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\obj\Debug\net9.0\GymManagement.Contract.sourcelink.json
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\bin\Debug\net9.0\GymManagement.Domain.dll
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\bin\Debug\net9.0\GymManagement.Domain.pdb
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\obj\Debug\net9.0\GymManagement.Contract.csproj.AssemblyReference.cache
+C:\Users\msigaming\Desktop\DomeGym\GymManagement.Contract\obj\Debug\net9.0\GymManag.265055CD.Up2Date

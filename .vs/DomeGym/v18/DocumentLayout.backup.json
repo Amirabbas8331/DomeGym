@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\msigaming\\Desktop\\DomeGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DDA3DFF-FF04-4641-B621-D16A69148528}|GymManagement.Api\\GymManagement.Api.csproj|c:\\users\\msigaming\\desktop\\domegym\\gymmanagement.api\\controllers\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DDA3DFF-FF04-4641-B621-D16A69148528}|GymManagement.Api\\GymManagement.Api.csproj|solutionrelative:gymmanagement.api\\controllers\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54432CF4-DC89-4977-A084-0AFB8B662D83}|GymManagement.Application\\GymManagement.Application.csproj|c:\\users\\msigaming\\desktop\\domegym\\gymmanagement.application\\subscriptions\\command\\createsubscription\\createsubscriptionscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54432CF4-DC89-4977-A084-0AFB8B662D83}|GymManagement.Application\\GymManagement.Application.csproj|solutionrelative:gymmanagement.application\\subscriptions\\command\\createsubscription\\createsubscriptionscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C758C59F-A61A-4029-9E3E-7CC6A7349137}|GymManagement.Domain\\GymManagement.Domain.csproj|c:\\users\\msigaming\\desktop\\domegym\\gymmanagement.domain\\subscriptions\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C758C59F-A61A-4029-9E3E-7CC6A7349137}|GymManagement.Domain\\GymManagement.Domain.csproj|solutionrelative:gymmanagement.domain\\subscriptions\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,54 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SubscriptionsController.cs",
-              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Api\\Controllers\\SubscriptionsController.cs",
-              "RelativeDocumentMoniker": "GymManagement.Api\\Controllers\\SubscriptionsController.cs",
-              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Api\\Controllers\\SubscriptionsController.cs",
-              "RelativeToolTip": "GymManagement.Api\\Controllers\\SubscriptionsController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwB0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T13:19:15.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateSubscriptionsCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
-              "RelativeDocumentMoniker": "GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
-              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
-              "RelativeToolTip": "GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAWwCsAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T13:17:56.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Subscription.cs",
-              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Domain\\Subscriptions\\Subscription.cs",
-              "RelativeDocumentMoniker": "GymManagement.Domain\\Subscriptions\\Subscription.cs",
-              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Domain\\Subscriptions\\Subscription.cs",
-              "RelativeToolTip": "GymManagement.Domain\\Subscriptions\\Subscription.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAADwvy8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T13:10:24.943Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -86,6 +35,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateSubscriptionsCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
+              "RelativeDocumentMoniker": "GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
+              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
+              "RelativeToolTip": "GymManagement.Application\\Subscriptions\\Command\\CreateSubscription\\CreateSubscriptionsCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwCIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T16:02:17.461Z",
+              "EditorCaption": ""
             }
           ]
         }

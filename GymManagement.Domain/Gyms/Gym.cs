@@ -1,6 +1,5 @@
 ﻿using ErrorOr;
 using GymManagement.Domain.Gyms;
-using GymManagement.Domain.Rooms;
 using Throw;
 
 public class Gym
@@ -13,38 +12,46 @@ public class Gym
     public List<Guid> RoomIds { get; private set; } = new();
     public List<Guid> TrainerIds { get; private set; } = new();
 
-    private Gym() { } 
+    private Gym() { }
 
-    public Gym(string name, Guid subscriptionId, int maxRooms, Guid? id = null)
+    private Gym(string name, Guid subscriptionId, int maxRooms, Guid? id = null)
     {
         Id = id ?? Guid.NewGuid();
         Name = name;
         SubscriptionId = subscriptionId;
         MaxRooms = maxRooms;
     }
-    public static ErrorOr<Gym> Create(string name,Guid subscriptionid, int maxrooms)
+
+    public static ErrorOr<Gym> Create(string name, Guid subscriptionId, int maxRooms)
     {
-        return new Gym(name, subscriptionid, maxrooms);
+        maxRooms.Throw().IfLessThanOrEqualTo(0);
+
+        return new Gym(name, subscriptionId, maxRooms);
     }
-    public ErrorOr<Success> AddRoom(ErrorOr<Room> room)
+
+    public ErrorOr<Success> AddRoom(Guid roomId)
     {
-        RoomIds.Throw().IfContains(room.Value.Id);
+        RoomIds.Throw().IfContains(roomId);
 
         if (RoomIds.Count >= MaxRooms)
             return GymErrors.CannotHaveMoreRoomsThanSubscriptionAllows;
 
-        RoomIds.Add(room.Value.Id);
+        RoomIds.Add(roomId);
         return Result.Success;
     }
+
     public ErrorOr<Success> RemoveRoom(Guid roomId)
     {
         RoomIds.Throw().IfNotContains(roomId);
+
         RoomIds.Remove(roomId);
         return Result.Success;
     }
-    public bool HasRoom(Guid id)
+    public ErrorOr<Success> HasRoom(Guid roomId)
     {
-        return RoomIds.Contains(id);
+        RoomIds.Throw().IfNotContains(roomId);
+
+        return Result.Success;
     }
     public ErrorOr<Success> AddTrainer(Guid trainerId)
     {
@@ -61,4 +68,6 @@ public class Gym
         TrainerIds.Remove(trainerId);
         return Result.Success;
     }
+
+    public bool HasTrainer(Guid trainerId) => TrainerIds.Contains(trainerId);
 }

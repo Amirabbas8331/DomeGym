@@ -1,4 +1,5 @@
 ﻿using ErrorOr;
+using FluentValidation;
 using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Gyms;
 using MediatR;
@@ -9,24 +10,32 @@ public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr
     private readonly ISubscriptionRepository _Subscriptionrepository;
     private readonly IGymRepository _gymRepository;
     private readonly IUnitOfWork _unitOfWork;
+
     public CreateGymCommandHandler(ISubscriptionRepository subscriptionrepository,IGymRepository gymRepository, IUnitOfWork unitOfWork)
     {
         _Subscriptionrepository = subscriptionrepository;
         _gymRepository = gymRepository;
         _unitOfWork = unitOfWork;
+
     }
     public async Task<ErrorOr<Gym>> Handle(CreateGymCommand request, CancellationToken cancellationToken)
     {
+        var validationResult= await validator.ValidateAsync(request, cancellationToken);
+        if (!validationResult.IsValid)return validationResult.Errors
+                .Select(error=>Error.Validation(code:error.ErrorCode,description:error.ErrorMessage))
+                .ToList();
+
         var subscription = await _Subscriptionrepository.GetByIdAsync(request.subscriptionid);
         if (subscription is null)
         {
             return Error.NotFound(description: "Subscription not found");
         }
+
         var gym = 
             Gym.Create(
             name: request.Name,
-            subscriptionid: subscription.Id, 
-            maxrooms:subscription.GetMaxRooms());
+            subscriptionId: subscription.Id.Value, 
+            maxRooms:subscription.GetMaxRooms());
 
         var addgymresult = subscription.AddGym(gym);
         

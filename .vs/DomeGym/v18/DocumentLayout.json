@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\msigaming\\Desktop\\DomeGym\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C758C59F-A61A-4029-9E3E-7CC6A7349137}|GymManagement.Domain\\GymManagement.Domain.csproj|c:\\users\\msigaming\\desktop\\domegym\\gymmanagement.domain\\gyms\\gym.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C758C59F-A61A-4029-9E3E-7CC6A7349137}|GymManagement.Domain\\GymManagement.Domain.csproj|solutionrelative:gymmanagement.domain\\gyms\\gym.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54432CF4-DC89-4977-A084-0AFB8B662D83}|GymManagement.Application\\GymManagement.Application.csproj|c:\\users\\msigaming\\desktop\\domegym\\gymmanagement.application\\validation\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54432CF4-DC89-4977-A084-0AFB8B662D83}|GymManagement.Application\\GymManagement.Application.csproj|solutionrelative:gymmanagement.application\\validation\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54432CF4-DC89-4977-A084-0AFB8B662D83}|GymManagement.Application\\GymManagement.Application.csproj|c:\\users\\msigaming\\desktop\\domegym\\gymmanagement.application\\gyms\\command\\creategym\\creategymcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54432CF4-DC89-4977-A084-0AFB8B662D83}|GymManagement.Application\\GymManagement.Application.csproj|solutionrelative:gymmanagement.application\\gyms\\command\\creategym\\creategymcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -34,6 +43,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gym.cs",
+              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Domain\\Gyms\\Gym.cs",
+              "RelativeDocumentMoniker": "GymManagement.Domain\\Gyms\\Gym.cs",
+              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Domain\\Gyms\\Gym.cs",
+              "RelativeToolTip": "GymManagement.Domain\\Gyms\\Gym.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwCEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T18:25:03.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateGymCommand.cs",
+              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Gyms\\Command\\CreateGym\\CreateGymCommand.cs",
+              "RelativeDocumentMoniker": "GymManagement.Application\\Gyms\\Command\\CreateGym\\CreateGymCommand.cs",
+              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Gyms\\Command\\CreateGym\\CreateGymCommand.cs",
+              "RelativeToolTip": "GymManagement.Application\\Gyms\\Command\\CreateGym\\CreateGymCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T18:05:44.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Validation\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "GymManagement.Application\\Validation\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\msigaming\\Desktop\\DomeGym\\GymManagement.Application\\Validation\\ValidationBehavior.cs",
+              "RelativeToolTip": "GymManagement.Application\\Validation\\ValidationBehavior.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:56:28.125Z",
+              "EditorCaption": ""
             }
           ]
         }
