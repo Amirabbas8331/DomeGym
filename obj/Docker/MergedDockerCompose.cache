@@ -43,6 +43,16 @@ services:
         read_only: true
         bind:
           create_host_path: true
+  consul:
+    container_name: Consul
+    image: hashicorp/consul:latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8500
+        published: "8500"
+        protocol: tcp
 networks:
   default:
     name: dockercompose5270975950661950588_default

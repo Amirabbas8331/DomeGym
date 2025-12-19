@@ -1,6 +1,3 @@
-C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.AssemblyReference.cache
-C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\appsettings.json
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\ApiGateway.staticwebassets.endpoints.json
@@ -28,6 +25,8 @@ C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensi
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.ServiceDiscovery.dll
+C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.ServiceDiscovery.Abstractions.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Steeltoe.Common.dll
@@ -36,6 +35,9 @@ C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Steeltoe.Common.H
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Steeltoe.Discovery.Consul.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\System.IO.Hashing.dll
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Yarp.ReverseProxy.dll
+C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.AssemblyReference.cache
+C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.AssemblyInfoInputs.cache
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.AssemblyInfo.cs
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.CoreCompileInputs.cache
@@ -50,6 +52,7 @@ C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\staticwebassets.b
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\swae.build.ex.cache
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.Up2Date
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.dll
@@ -57,6 +60,3 @@ C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\refint\ApiGateway
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.pdb
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ApiGateway.genruntimeconfig.cache
 C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\ref\ApiGateway.dll
-C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.ServiceDiscovery.dll
-C:\Users\msigaming\Desktop\DomeGym\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.ServiceDiscovery.Abstractions.dll
-C:\Users\msigaming\Desktop\DomeGym\ApiGateway\obj\Debug\net9.0\swae.build.ex.cache

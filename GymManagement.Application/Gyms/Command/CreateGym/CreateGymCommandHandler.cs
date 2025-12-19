@@ -1,7 +1,6 @@
 ﻿using ErrorOr;
 using FluentValidation;
 using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Gyms;
 using MediatR;
 
 namespace GymManagement.Application.Gyms.Command.CreateGym;
@@ -19,11 +18,7 @@ public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr
 
     }
     public async Task<ErrorOr<Gym>> Handle(CreateGymCommand request, CancellationToken cancellationToken)
-    {
-        var validationResult= await validator.ValidateAsync(request, cancellationToken);
-        if (!validationResult.IsValid)return validationResult.Errors
-                .Select(error=>Error.Validation(code:error.ErrorCode,description:error.ErrorMessage))
-                .ToList();
+    { 
 
         var subscription = await _Subscriptionrepository.GetByIdAsync(request.subscriptionid);
         if (subscription is null)

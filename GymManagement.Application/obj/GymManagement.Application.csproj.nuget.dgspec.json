@@ -65,14 +65,6 @@
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[12.1.1, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.5.0, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[9.0.6, )"
             }
           },
           "imports": [
@@ -148,6 +140,14 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[2.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.0.0, )"
             },
             "Throw": {
               "target": "Package",
